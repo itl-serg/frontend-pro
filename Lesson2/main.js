@@ -38,3 +38,46 @@
 
 //Задание 4
 // alert("Задание #4");
+
+// let numberWeeks = prompt("Введите количество недель");
+// let numberDays = prompt("Введите количество дней");
+// let numberHours = prompt("Введите количество часов");
+// let wagesPerHour = prompt("Введите рейт за час");
+// let wage = numberWeeks * numberDays * numberHours * wagesPerHour;
+// result = alert(`з/п за июль  ${wage} $`);
+// console.log(`з/п за июль  ${wage} $`);
+
+//Задание 5
+// alert("Задание #5");
+
+// let oddNumber = prompt("Введите число");
+// let checkNumber = oddNumber % 2;
+// if (checkNumber == 0) {
+//     result = alert("Четное");
+// } else {
+//     console.log(oddNumber + " = " + "Нечетное");
+// }
+// if (checkNumber == 1) {
+//     result = alert("Нечетное");
+// } else {
+//     console.log(oddNumber + " = " + "Четное");
+// }
+
+//Задание 6
+// alert("Задание #6");
+
+// let meaning = prompt("Введите значение");
+// let valueNumber;
+// let valueText;
+// if (meaning >= 0) {
+//     valueNumber;
+//     alert("Вы ввели число");
+//     console.log(`Введенное значение "${meaning}" является числом`);
+// } else {
+//     valueText;
+//     alert("Вы ввели текст");
+//     console.log(`Введенное значение "${meaning}" является текстом`);
+// }
+
+//Задание 7
+// alert("Задание #7");
