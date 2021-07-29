@@ -81,3 +81,23 @@
 
 //Задание 7
 // alert("Задание #7");
+
+// let randomNumber = Math.random();
+// let enteredNumber = prompt("Введите число");
+// let roundedNumber = Math.round(randomNumber * 100);
+// if (roundedNumber > enteredNumber) {
+//     alert(roundedNumber + ">" + enteredNumber);
+//     console.log(roundedNumber + ">" + enteredNumber);
+// } else {
+//     if (roundedNumber == enteredNumber) {
+//         alert(roundedNumber + "=" + enteredNumber);
+//         console.log(roundedNumber + "=" + enteredNumber);
+//     }
+// }
+// if (roundedNumber < enteredNumber) {
+//     alert(roundedNumber + "<" + enteredNumber);
+//     console.log(roundedNumber + "<" + enteredNumber);
+// }
+
+//Задание 8
+// alert("Задание #8");
