@@ -188,3 +188,34 @@
 // Циклы
 
 //Задание 2.1
+
+// let str = "";
+// for (let i = 0; i < 5; i++) {
+//     str = str + ".#";
+// }
+// alert(str);
+// console.log(str);
+
+//Задание 2.2
+
+// for (let y = 1; y <= 10; y++) {
+//     if (y % 2 == true) continue;
+//     let x = y * y;
+//     alert(x);
+// }
+
+//Задание 2.3
+
+// let username = prompt("Введите имя");
+
+// do {
+//     console.log(`Happy birthday to you Happy birthday to you Happy birthday dear "${username}" Happy birthday to you`);
+// } while (username == true);
+
+//Задание 2.4
+
+// do {
+//     var x = confirm("Прерывается при нажатии на Ok");
+// } while (x === false);
+
+//Задание 2.5
