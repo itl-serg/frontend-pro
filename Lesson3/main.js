@@ -214,8 +214,19 @@
 
 //Задание 2.4
 
+// let x;
 // do {
-//     var x = confirm("Прерывается при нажатии на Ok");
+//     x = confirm("Прерывается при нажатии на Ok");
 // } while (x === false);
 
 //Задание 2.5
+
+// let oddNumber;
+
+let rdmNumber = prompt("Введите любое число");
+
+for (let i = 1; i <= rdmNumber; i++) {
+    if (i % 2 !== 1) continue;
+    i += i;
+    console.log(i);
+}
