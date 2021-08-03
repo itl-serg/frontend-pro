@@ -223,10 +223,35 @@
 
 // let oddNumber;
 
-let rdmNumber = prompt("Введите любое число");
+// let rdmNumber = prompt("Введите любое число");
+// let summ = 0;
+// for (let i = 0; i <= rdmNumber; i++) {
+//     if (i % 2 != 1) continue;
+//     summ += i;
+// }
+// console.log(summ);
 
-for (let i = 1; i <= rdmNumber; i++) {
-    if (i % 2 !== 1) continue;
-    i += i;
-    console.log(i);
-}
+//Задание 2.6
+
+// let i = 0;
+// let n;
+// while (true) {
+//     n = Math.random();
+//     if (n > 0.9) {
+//         break;
+//     } else {
+//         i++;
+//     }
+// }
+// console.log(`Количество циклов: ${i}, Значение: ${n}`);
+
+//Задание 2.7
+
+// for (let i = 1; i <= 10; i++) {
+//     for (let k = 1; k <= 10; k++) {
+//         let result = k * i;
+//         console.log(`${i} x ${k} = ${result}`);
+//     }
+// }
+
+//Задание 2.8
