@@ -221,8 +221,6 @@
 
 //Задание 2.5
 
-// let oddNumber;
-
 // let rdmNumber = prompt("Введите любое число");
 // let summ = 0;
 // for (let i = 0; i <= rdmNumber; i++) {
@@ -254,4 +252,33 @@
 //     }
 // }
 
-//Задание 2.8
+//Задание 2.8 (Нашел такой вариант через гугл)
+
+// let fib;
+// let n1 = 1;
+// let n2 = 0;
+// for (let i = 0; i <= 10; i++) {
+//     fib = n1 + n2;
+//     n1 = n2;
+//     n2 = fib;
+//     console.log(fib);
+// }
+
+//Задание 2.9
+
+// let rdmNumber;
+// let summ = 0;
+// let average = 0;
+// for (let i = 1; true; i++) {
+//     let rdmNumber = prompt("Введите число:");
+//     if (rdmNumber) {
+//         summ += +rdmNumber;
+//         average = summ / i;
+//         console.log(`Kоличество введенных чисел = ${i} / Общая сумма = ${summ} / Среднее арифметическое = ${average}`);
+//         continue;
+//     } else {
+//         break;
+//     }
+// }
+
+//Задание 2.10
