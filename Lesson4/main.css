@@ -1,0 +1,8 @@
+ul,
+li,
+ol {
+  margin: 10px;
+}
+ol li {
+  padding-top: 20px;
+}
