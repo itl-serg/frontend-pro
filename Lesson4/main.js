@@ -25,3 +25,9 @@
 // }
 
 // Задание 3
+
+let str = "Как однажды Жак звонарь сломал фонарь головой";
+let mass = [];
+mass = str.split([" "]);
+mass = mass[0] + " " + mass[2] + " " + mass[3] + " " + mass[1] + " " + mass[4] + " " + mass[6] + " " + mass[5];
+alert(`"${mass}"`);
