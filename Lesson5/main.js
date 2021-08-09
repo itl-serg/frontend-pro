@@ -84,3 +84,16 @@
 // console.log(mapFullName);
 
 // Задание 4
+// Напишите функцию аналог метода массива shift. Функция удаляет из переданного в параметре массива первый элемент
+
+let mas = [];
+
+let deleteNumberOne = function (mas) {
+    let masNew = [];
+    for (let i = 0; i < arguments.length; i++) {
+        masNew[i] = arguments[i + 1];
+        console.log(masNew);
+    }
+};
+
+deleteNumberOne("a", "b", "c", "d", "e", "f", "g", "h", "j");
