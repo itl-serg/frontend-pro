@@ -86,14 +86,49 @@
 // Задание 4
 // Напишите функцию аналог метода массива shift. Функция удаляет из переданного в параметре массива первый элемент
 
-let mas = [];
+// let mas = [];
+// let deleteNumberOne = function (mas) {
+//     let newMas = [];
+//     for (let i = 0; i < arguments.length - 1; i++) {
+//         newMas[i] = arguments[i + 1];
+//         console.log(newMas);
+//     }
+// };
 
-let deleteNumberOne = function (mas) {
-    let masNew = [];
-    for (let i = 0; i < arguments.length; i++) {
-        masNew[i] = arguments[i + 1];
-        console.log(masNew);
-    }
-};
+// deleteNumberOne("a", "b", "c", "d", "e", "f", "g", "h", "j");
 
-deleteNumberOne("a", "b", "c", "d", "e", "f", "g", "h", "j");
+// Задание 5
+// Напишите функцию аналог метода массива push. Функция добавляет в конец переданного в параметре массив произвольное количество элементов.
+
+// let mas = [];
+// let a = prompt("Введите число элементов, которое необходимо добавить в конец массива:");
+// let addNumberMas = function () {
+//     let newMas = [];
+//     for (let i = 0; i < arguments.length + 1 * a; i++) {
+//         newMas[i] = arguments[i];
+
+//         console.log(newMas);
+//     }
+// };
+
+// addNumberMas("a", "b", "c", "d", "e", "f", "g", "h", "j");
+
+// Задание 6
+// Напишите функцию аналог метода Object.assign(). Первый параметр функции - целевой объект, поля которого будут изменены или расширены. Остальные параметры - объекты-источники, полями которых будет расширяться целевой объект.
+
+// let s = {
+//     firstname: "John",
+//     lastname: "Doe",
+// };
+// let source = {
+//     firstname: "Tom",
+//     age: 10,
+// };
+// let getUser = function () {
+//     let a = { ...source, ...s };
+//     console.log(a);
+// };
+// getUser();
+
+// Задание 7
+// Напишите функцию setComment с параметрами: date, message, author. Дата и текст сообщения - обязательные параметры, если какой-то из них или оба отсутствуют, то выполнение функции должно обрываться, а пользователю выдаваться предупреждение (alert) о том, что данные переданы некорректно. Параметр author - опциональный, но должна происходить проверка: если параметр не передан, то вместо него подставляется значение ‘Anonymous’. Функция распечатывает в консоле текст в формате:
