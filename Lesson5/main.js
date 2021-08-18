@@ -118,12 +118,7 @@ addNumberMas("a", "b", "c", "d", "e", "f", "g", "h", "j");
 
 let extend = (fullName, ...name) => {
     for (let i of name) {
-        for (let k in i) {
-            if (fullName[k]) {
-                fullName[k] = i[k];
-            }
-            fullName[k] = i[k];
-        }
+        for (let key in i) fullName[key] = (fullName[key] = i[key]) ? (fullName[key] = i[key]) : fullName[key];
     }
     return fullName;
 };
