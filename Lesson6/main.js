@@ -51,3 +51,58 @@
 // coffeeMachine.start();
 
 // Задание 3
+
+// Создайте объект counter с методами увеличения, уменьшения значения счетчика и методом возврата текущего значения. Используйте концепцию chaining для создания цепочки вызовов.
+
+// let current = {
+//     counter: 0,
+//     inc: function () {
+//         this.counter++;
+//         return this;
+//     },
+//     dec: function () {
+//         this.counter--;
+//         return this;
+//     },
+//     getValue: function () {
+//         alert(this.counter);
+//         return this;
+//     },
+// };
+// current.inc().inc().dec().inc().dec().getValue();
+
+// Задание 4
+
+// Есть следующий код:
+
+// let country = {
+//     name: "Ukraine",
+//     language: "ukrainian",
+//     capital: {
+//         name: "Kyiv",
+//         population: 2907817,
+//         area: 847.66,
+//     },
+// };
+// function format(start, end) {
+//     console.log(start + this.name + end);
+// }
+// // Допишите код, чтобы в консоли браузера появились строки, которые написаны в комментариях:
+// format.call(country, "", ""); // Ukraine
+// format.apply(country, ["", ""]); // [Ukraine]
+// format.call(country.capital, "", ""); // Kyiv
+// format.apply(country.capital, ["", ""]); // Kyiv
+// format.apply("", ["", ""]); // undefined
+
+// // Задание 5
+// // 	Создайте объект user с полем name. Создайте функцию format с параметрами start и end:
+
+function format(start, end) {
+    console.log(start + this.name + end);
+}
+
+let user = {
+    name: "John",
+};
+
+// // Реализуйте решение текущего задания используя метод bind().
