@@ -1,0 +1,12 @@
+ul,
+li,
+ol {
+  margin: 15px;
+}
+ol li {
+  padding-top: 20px;
+}
+span {
+  display: block;
+  margin-top: 5px;
+}

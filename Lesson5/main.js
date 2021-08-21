@@ -116,8 +116,8 @@ addNumberMas("a", "b", "c", "d", "e", "f", "g", "h", "j");
 // Задание 6
 // Напишите функцию аналог метода Object.assign(). Первый параметр функции - целевой объект, поля которого будут изменены или расширены. Остальные параметры - объекты-источники, полями которых будет расширяться целевой объект.
 
-let extend = (fullName, ...name) => {
-    for (let i of name) {
+let extend = (fullName, ...names) => {
+    for (let i of names) {
         for (let key in i) fullName[key] = (fullName[key] = i[key]) ? (fullName[key] = i[key]) : fullName[key];
     }
     return fullName;
