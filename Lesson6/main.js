@@ -95,14 +95,34 @@
 // format.apply("", ["", ""]); // undefined
 
 // // Задание 5
+
 // // 	Создайте объект user с полем name. Создайте функцию format с параметрами start и end:
-
-function format(start, end) {
-    console.log(start + this.name + end);
-}
-
-let user = {
-    name: "John",
-};
-
 // // Реализуйте решение текущего задания используя метод bind().
+
+// let user = {
+//     name: "John",
+//     delay: 1000,
+//     format: function () {
+//         setTimeout(
+//             function (start, end) {
+//                 console.log(start + this.name + " " + end);
+//             }.bind(this),
+//             this.delay,
+//             "",
+//             "Doe"
+//         );
+//     },
+// };
+// user.format();
+
+// // Задание 6
+// Напишите функцию concat, которая соединяет две строки, разделенные каким-то символом: разделитель и строки передаются в параметрах функции. Используя карринг, создайте новую функцию hello, которая которая выводит приветствие тому, кто передан в ее параметре:
+
+hello("World"); // Hello World
+hello("John"); // Hello John
+
+// Level Up
+
+let concat = function (x, y) {};
+
+// Рекурсия
