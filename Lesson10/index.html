@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Lesson10</title>
+</head>
+
+<body>
+    <div class="section">
+        <h1>Задача 1</h1>
+        <ol>
+            <li>Создайте h2 c текстом "События"</li>
+            <li>Создайте блок div размером 400px на 400px</li>
+            <li>Создайте над блоком текст с отображением координат по примеру X: 150 Y: 120</li>
+            <li>Добавьте внизу блока еще один текст с содержанием "Координаты внутри блока: х 180, у 200"</li>
+            <li>
+                При движении мышки над блоком должны обновляться данные о расположении курсора и отображаться координаты
+                в
+                тексте
+                над
+                блоком соответственно осям х и у по отношению к странице
+            </li>
+            <li>Внизу должны отображаться текущие координаты по x и y, но по отношению блока</li>
+        </ol>
+
+        <article>
+            <h2>События</h2>
+            <p>Координаты:
+                <span>X =</span>
+                <span class="x-outside"></span>
+                <span>;</span>
+                <span>Y =</span>
+                <span class="y-outside"></span>
+            </p>
+            <div class="mouse-pad">
+                <p>Координаты внутри блока:
+                    <span>X =</span>
+                    <span class="x-inside"></span>
+                    <span>;</span>
+                    <span>Y =</span>
+                    <span class="y-inside"></span>
+                </p>
+            </div>
+        </article>
+
+        <h2>Задача 2</h2>
+        <ol>
+            <li>Создайте h2 c текущим временем, к примеру " Время: 13:34:45";</li>
+            <li>Примените setInterval для отображения времени каждую секунду, чтобы были идущие чаcы</li>
+            <li>Создайте кнопки Start и Stop</li>
+            <li>Навесьте обработчики события на клик.</li>
+            <li>При клике на Stop время должно остановиться</li>
+            <li>При клике на Start время должно продолжить свой ход (скачек времени, это нормально)</li>
+        </ol>
+
+        <article>
+            <h2 id="clock"></h2>
+            <input type="button" onclick="clockStart()" value="Start">
+            <input type="button" onclick="clockStop()" value="Stop">
+        </article>
+
+    </div>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
