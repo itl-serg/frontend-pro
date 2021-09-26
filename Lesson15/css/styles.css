@@ -1,0 +1,14 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #eee;
+  width: 100vh;
+  font: 14px/26px "Open Sans", sans-serif;
+}
+h1 {
+  font-size: 25px;
+}
