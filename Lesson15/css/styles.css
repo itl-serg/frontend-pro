@@ -6,9 +6,27 @@
 
 body {
   background: #eee;
-  width: 100vh;
+  height: 100%;
   font: 14px/26px "Open Sans", sans-serif;
 }
-h1 {
+.theme {
+  width: 100%;
+  height: 60px;
+  background: #e2e2e2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding-bottom: 10px;
+}
+.heading {
+  font-weight: 600;
   font-size: 25px;
+  margin: 20px;
+  align-content: center;
+}
+.users {
+  margin: 50px;
+  padding: 20px;
+  border: 2px solid #000;
 }
