@@ -2,7 +2,7 @@ const startBtn = document.querySelector("#start");
 const screen = document.querySelectorAll(".screen");
 const timeList = document.querySelector("#time-list");
 const timeEl = document.querySelector("#time");
-const board = document.querySelector("#board");
+const board = document.querySelector(".board");
 
 const colors = ["red", "orange", "grey", "green", "blue", "violet"];
 
@@ -60,9 +60,10 @@ function finishGame() {
 function createRandomSquare() {
     const square = document.createElement("div");
 
-    const size = getRandomNumber(20, 60);
+    const size = 20;
     const { width } = board.getBoundingClientRect();
     const x = getRandomNumber(0, width - size);
+    const y = getNumberY(0, 480);
 
     square.classList.add("square");
     square.style.width = `20px`;
@@ -71,6 +72,19 @@ function createRandomSquare() {
     square.style.left = `${x}px`;
 
     square.style.background = getRandomColor();
+    function getNumberY(min, max) {
+        let start = Date.now();
+        let timer = setInterval(function () {
+            let timePassed = Date.now() - start;
+            square.style.top = timePassed / 20 + "px";
+            if (timePassed > 10000) clearElement();
+        }, 5);
+
+        function clearElement() {
+            clearInterval(timer);
+            createRandomSquare();
+        }
+    }
 
     board.append(square);
 }
