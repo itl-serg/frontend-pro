@@ -4,7 +4,7 @@ const timeList = document.querySelector("#time-list");
 const timeEl = document.querySelector("#time");
 const board = document.querySelector(".board");
 
-const colors = ["red", "orange", "grey", "green", "blue", "violet"];
+const colors = ["red", "orange", "grey", "green", "blue", "violet", "purple"];
 
 let time = 0;
 let score = 0;
@@ -63,7 +63,7 @@ function createRandomSquare() {
     const size = 20;
     const { width } = board.getBoundingClientRect();
     const x = getRandomNumber(0, width - size);
-    const y = getNumberY(0, 480);
+    const y = getNumberY();
 
     square.classList.add("square");
     square.style.width = `20px`;
@@ -72,7 +72,7 @@ function createRandomSquare() {
     square.style.left = `${x}px`;
 
     square.style.background = getRandomColor();
-    function getNumberY(min, max) {
+    function getNumberY() {
         let start = Date.now();
         let timer = setInterval(function () {
             let timePassed = Date.now() - start;
