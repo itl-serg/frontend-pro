@@ -4,7 +4,7 @@ const timeList = document.querySelector("#time-list");
 const timeEl = document.querySelector("#time");
 const board = document.querySelector(".board");
 
-const colors = ["red", "orange", "grey", "green", "blue", "violet", "purple"];
+const colors = ["red", "orange", "grey", "green", "blue", "violet", "purple", "pink"];
 
 let time = 0;
 let score = 0;
