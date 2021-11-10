@@ -1,0 +1,14 @@
+.item-wrapper {
+  width: 300px;
+  height: 40px;
+  background-color: #e8e8e8;
+  border-radius: 10px;
+}
+.item-text {
+  font: 400 18px/24px "Roboto", sans-serif;
+  color: #454545;
+}
+
+.bucket-icon {
+  width: 30px;
+}

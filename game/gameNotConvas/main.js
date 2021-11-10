@@ -72,14 +72,14 @@ function createRandomSquare() {
     square.style.left = `${x}px`;
 
     square.style.background = getRandomColor();
+
     function getNumberY() {
         let start = Date.now();
         let timer = setInterval(function () {
             let timePassed = Date.now() - start;
-            square.style.top = timePassed / 20 + "px";
-            if (timePassed > 10000) clearElement();
+            square.style.top = timePassed / 10 + "px";
+            if (timePassed > 5000) clearElement();
         }, 5);
-
         function clearElement() {
             clearInterval(timer);
             createRandomSquare();

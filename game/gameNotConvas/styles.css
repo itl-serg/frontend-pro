@@ -93,6 +93,7 @@ h1 {
 }
 
 .square {
+  content: "";
   background: white;
   position: absolute;
   cursor: pointer;
