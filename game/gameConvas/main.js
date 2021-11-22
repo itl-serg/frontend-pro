@@ -4,41 +4,43 @@ const syopBtn = document.querySelector("#stop");
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
-let colors = ["red", "orange", "grey", "green", "blue", "violet"];
-
 let score = document.getElementById("score");
 
-let n = 2;
-let x = 0;
+let n = 4; //скорость в пикселях
+let x = canvas.width - Math.floor(Math.random() * canvas.width);
 let y = 0;
 
-function getRandomSpeed() {}
+function getSpeedMove() {}
 
 function getRandomColor() {
+    let colors = ["red", "orange", "grey", "green", "blue", "violet"];
     let index = Math.floor(Math.random() * colors.length);
     ctx.fillStyle = colors[index];
+    ctx.fill();
 }
 
-function draw(x, y) {
-    ctx.fillRect(x, y, 20, 15);
+function createSquare(x, y) {
+    ctx.fillRect(x, y, 20, 20);
 }
 
-function move() {
-    if (y < canvas.width - 20 && x === 0) {
+function moveDownSquare() {
+    if (y < canvas.width - 20) {
         y += n;
     }
 }
 
-function game() {
+function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    draw(x, y);
-    move();
-    getRandomSpeed();
-    getRandomColor();
-    requestAnimationFrame(game);
+    createSquare(x, y);
+    moveDownSquare();
+    requestAnimationFrame(animate);
 }
-game();
 
-// тут может находится ваш код
+startBtn.addEventListener("click", () => {
+    animate();
+    getRandomColor();
+    getSpeedMove();
+    getRandomPlace();
+});
 
 document.body.onload = animate;
