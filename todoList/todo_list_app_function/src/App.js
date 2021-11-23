@@ -12,7 +12,7 @@ let todos = [
 
 export function App() {
     const [todosList, setTotos] = useState(todos);
-    const [text, setText] = useState(null);
+    const [text, setText] = useState("");
 
     const addTask = () => {
         const newTask = {
@@ -29,10 +29,21 @@ export function App() {
         setTotos(newArrey);
     };
 
+    const markTodoDone = (id) => {
+        const result = todosList.map((item) => {
+            if (item.id == id) {
+                item.done = !item.done;
+            }
+            return item;
+        });
+
+        setTotos(result);
+    };
+
     return (
         <div className="app-container">
             <Header />
-            <List todos={todosList} removeTask={removeTask} />
+            <List todos={todosList} removeTask={removeTask} markTodoDone={markTodoDone} />
             <div className="form">
                 <input className="input" type="text" value={text} onChange={(event) => setText(event.target.value)} />
                 <button className="button" onClick={() => addTask()}>

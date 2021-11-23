@@ -2,11 +2,11 @@ import React from "react";
 import { ListItem } from "../ListItem/ListItem";
 import "./List.css";
 
-export function List({ todos, removeTask }) {
+export function List({ todos, removeTask, markTodoDone }) {
     return (
         <>
-            {todos.map((todo) => {
-                return <ListItem data={todo} removeTask={removeTask} />;
+            {todos.map((todo, index) => {
+                return <ListItem key={index} data={todo} removeTask={removeTask} markTodoDone={markTodoDone} />;
             })}
         </>
     );

@@ -10,6 +10,9 @@
   padding: 0 10px;
   margin: 10px 0;
 }
+.item-wrapper-done {
+  background-color: green;
+}
 .item-text {
   font: 400 18px/24px "Roboto", sans-serif;
   color: #454545;
